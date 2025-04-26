@@ -25,7 +25,7 @@ cp -rf ${WORKDIR}/../addboard/userpatches/* userpatches
 ls -la
 echo "--------------------------------"
 echo "编译镜像"
-./compile.sh build BOARD=tpm312 BRANCH=stable BUILD_DESKTOP=no BUILD_MINIMAL=yes COMPRESS_OUTPUTIMAGE=sha,xz KERNEL_CONFIGURE=no RELEASE=jammy
+./compile.sh build BOARD=edge-force BRANCH=stable BUILD_DESKTOP=no BUILD_MINIMAL=yes COMPRESS_OUTPUTIMAGE=sha,xz KERNEL_CONFIGURE=no RELEASE=jammy
 
 
 
