@@ -1030,6 +1030,6 @@ new file mode 100644
 +};
 +
 +&hdmi_in_vopl{
-+	status = "okay";
++	status = "disabled";
 +};
 +
