@@ -36,4 +36,4 @@ DISABLE_UPDATE $(echo "${PKG_LIST}" | grep "^linux-u-boot")
 sed -i 's/Armbian-unofficial/Armbian OS/g' /etc/armbian-image-release
 sed -i 's/Armbian-unofficial/Armbian OS/g' /etc/armbian-release
 #设置主机名
-echo "rk3399" | sudo tee /etc/hostname
+echo -e "rk3399" > /etc/hostname
