@@ -41,7 +41,9 @@ echo -e "rk3399" > /etc/hostname
 echo -e "Asia/Shanghai" > /etc/timezone
 #网络设置
 apt update
-apt install openvswitch-switch
+apt install -y openvswitch-switch
+apt -qq autoremove --purge
+apt -qq clean
 cat > /etc/netplan/armbian2.yaml <<EOF
 network:
   version: 2
