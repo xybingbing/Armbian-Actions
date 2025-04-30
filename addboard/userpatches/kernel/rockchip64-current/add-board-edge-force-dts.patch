@@ -316,7 +316,7 @@ new file mode 100644
 +	};
 +
 +	es8316-sound {
-+		status = "okay";
++		status = "disabled";
 +		compatible = "simple-audio-card";
 +		pinctrl-names = "default";
 +		// pinctrl-0 = <&hp_det>;

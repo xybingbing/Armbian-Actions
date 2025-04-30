@@ -37,3 +37,17 @@ sed -i 's/Armbian-unofficial/Armbian OS/g' /etc/armbian-image-release
 sed -i 's/Armbian-unofficial/Armbian OS/g' /etc/armbian-release
 #设置主机名
 echo -e "rk3399" > /etc/hostname
+#设置时区
+echo -e "Asia/Shanghai" > /etc/timezone
+#网络设置
+apt update
+apt install openvswitch-switch
+cat > /etc/netplan/armbian2.yaml <<EOF
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: true
+      dhcp6: true
+EOF
