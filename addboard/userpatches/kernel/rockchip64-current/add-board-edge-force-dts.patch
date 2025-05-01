@@ -681,7 +681,7 @@ new file mode 100644
 +&i2c1 {
 +	i2c-scl-rising-time-ns = <300>;
 +	i2c-scl-falling-time-ns = <15>;
-+	status = "okay";
++	status = "disabled";
 +
 +	es8316: codec@10 {
 +		compatible = "everest,es8316";
