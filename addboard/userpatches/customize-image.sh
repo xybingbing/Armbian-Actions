@@ -37,7 +37,8 @@ sed -i 's/Armbian-unofficial/Armbian OS/g' /etc/armbian-image-release
 sed -i 's/Armbian-unofficial/Armbian OS/g' /etc/armbian-release
 #设置主机名
 echo -e "rk3399" > /etc/hostname
-#设置时区
+#设置中国时区
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 echo -e "Asia/Shanghai" > /etc/timezone
 #网络设置
 apt update
