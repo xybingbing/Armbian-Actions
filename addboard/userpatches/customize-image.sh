@@ -42,9 +42,9 @@ echo -e "Asia/Shanghai" > /etc/timezone
 #网络设置
 apt update
 apt install -y openvswitch-switch
-apt -qq autoremove --purge
 apt -qq clean
-cat > /etc/netplan/armbian2.yaml <<EOF
+rm -rf /etc/netplan/*
+cat > /etc/netplan/armbian.yaml <<EOF
 network:
   version: 2
   renderer: networkd
