@@ -44,7 +44,7 @@ echo -e "Asia/Shanghai" > /etc/timezone
 apt update
 apt install -y openvswitch-switch
 apt -qq clean
-rm -rf /etc/netplan/*
+#rm -rf /etc/netplan/*
 cat > /etc/netplan/armbian.yaml <<EOF
 network:
   version: 2
